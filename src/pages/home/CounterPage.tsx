@@ -5,7 +5,9 @@ import ScrollTrigger from "react-scroll-trigger";
 
 const CounterPage = () => {
   const [counterState, setCounterState] = useState(false);
-  return (
+  return (    
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
     <ScrollTrigger
       onEnter={() => setCounterState(true)}
       onExit={() => setCounterState(false)}
