@@ -14,22 +14,6 @@
     justify-content: end;
   }
 }
-.swiper-pagination-bullet {
-  padding: 6px
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #2f2ea6;
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f0f0f0;
-}
 
 @media screen and (min-width: 500px) {
   .menuIcon {
@@ -47,4 +31,21 @@
 
 .dashboardLogo {
   width: 200px;
+}
+
+.swiper-pagination-bullet {
+  padding: 6px
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2f2ea6;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
 }
