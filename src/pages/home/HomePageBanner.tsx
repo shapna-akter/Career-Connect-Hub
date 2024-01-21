@@ -16,7 +16,6 @@ const HomePageBanner = () => {
         style={{
           padding: "20px",
           color: "white",
-          backgroundColor: "#123770",
           backgroundImage: `url(${homeBG})`,
           backgroundSize: "cover",
           backgroundPosition: "center",

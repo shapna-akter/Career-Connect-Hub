@@ -4,6 +4,7 @@ import { Col, Row } from "antd";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./Blog.module.css";
+import homeBg from '../../assets/homeBg.jpg';
 
 interface Blog {
   _id: string;
@@ -39,7 +40,19 @@ const Blog = () => {
           backgroundColor: "#FFFFFF",
         }}
       >
-        <div className={style.header}>
+        <div style={{
+          width: "100%",
+          height: "25rem",
+          backgroundImage: `url(${homeBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          color: "#ffffff"
+        }}>
           <div>
             <h1 style={{ fontSize: "2.4rem", marginBottom: "1rem" }}>Blog</h1>
             <p style={{ fontSize: "1.3rem" }}>
