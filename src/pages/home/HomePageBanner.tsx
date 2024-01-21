@@ -23,7 +23,7 @@ const HomePageBanner = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <Col xs={24} sm={12} data-aos="zoom-in-right" data-aos-duration="1000">
+        <Col xs={24} sm={12} data-aos="fade-right" data-aos-duration="1000">
           <p>CareerConnect Hub FOR EMPLOYERS</p>
           <h1
             style={{
@@ -61,7 +61,7 @@ const HomePageBanner = () => {
             Post a Job
           </Button>
         </Col>
-        <Col xs={24} sm={12} data-aos="zoom-in-left" data-aos-duration="1000">
+        <Col xs={24} sm={12} data-aos="fade-left" data-aos-duration="1000">
           <img
             style={{
               width: "100%",
