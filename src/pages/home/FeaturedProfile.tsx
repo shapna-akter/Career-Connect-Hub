@@ -60,7 +60,7 @@ const FeaturedProfile = () => {
         data-aos="zoom-in"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
-        style={{ fontSize: "2.2rem", textAlign: "center", margin: "2rem 0", color:"#2F2EA6" }}
+        style={{ fontSize: "2.2rem", textAlign: "center", marginBottom: "50px", color:"#2F2EA6" }}
       >
         Expert Candidates
       </h1>

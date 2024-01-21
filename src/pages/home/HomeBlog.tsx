@@ -36,7 +36,7 @@ const HomeBlog = () => {
       align="middle"
       style={{
         backgroundColor: "#FFFFFF",
-        padding: "3em 0",
+        marginBottom: "50px"
       }}
     >
       <Col

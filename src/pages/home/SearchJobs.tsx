@@ -10,7 +10,7 @@ const SearchJobs = () => {
         align="middle"
         style={{
           padding: "20px",
-          margin: "50px 0",
+          marginBottom: "50px",
         }}
         data-aos="fade-up"
         data-aos-duration="1000"
