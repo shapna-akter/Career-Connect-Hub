@@ -19,7 +19,6 @@ const Homepage = () => {
       <BuildResume/>
       <PerformInterview/>
       <FeaturedProfile></FeaturedProfile>
-      {/* <HelpCenter /> */}
       <HomeBlog></HomeBlog>
       <Testimonial/>
       <CounterPage/>

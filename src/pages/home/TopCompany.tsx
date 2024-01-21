@@ -36,7 +36,7 @@ const TopCompany = () => {
       <Row
         justify="space-evenly"
         align="middle"
-        data-aos="fade-left"
+        data-aos="flip-up"
         data-aos-duration="1000"
       >
         <Col xs={24} sm={4}>
