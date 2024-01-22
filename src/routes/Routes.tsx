@@ -1,6 +1,5 @@
 // import PrivateRoutes from "./PrivateRoute";
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../components/layouts/MainLayout";
 import Homepage from "../pages/home/Homepage";
 import CareerServices from "../pages/careerServices/careerServices";
 import Blog from "../pages/Blog/Blog";
@@ -16,7 +15,6 @@ import AddCompany from "../pages/company/CompanySignUp";
 import PrivateRoutes from "./PrivateRoute";
 import JobDetails from "../pages/findJob/jobDetails";
 import MyApplicationPage from "../pages/dashboard/myApplication/myApplication";
-import DashboardLayout from "../components/layouts/DashboardLayout";
 import ViewJobs from "../pages/dashboard/job/ViewJobs";
 import EditJob from "../pages/dashboard/job/EditJob";
 import CreateJob from "../pages/dashboard/job/CreateJob";
@@ -27,6 +25,8 @@ import UpdateCompany from "../pages/dashboard/company/UpdateCompany";
 import ViewCompany from "../pages/dashboard/company/ViewCompany";
 import AppliedJobs from "../pages/dashboard/job/AppliedJobs";
 import CompanyChart from "../pages/dashboard/company/CompanyCharts";
+import DashboardLayout from "../components/Layouts/DashboardLayout";
+import MainLayout from "../components/Layouts/MainLayout";
 
 const routes = createBrowserRouter([
   {

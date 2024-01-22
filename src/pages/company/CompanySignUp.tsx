@@ -5,8 +5,8 @@ import { useAddCompanyMutation } from "../../redux/api/companyApi";
 import Form from "../../components/Form/Form";
 import FormInput from "../../components/Form/FormInput";
 import FormSelectField from "../../components/Forms/FormSelectField";
-import { sizes } from "../../components/constant/global";
 import FormTextArea from "../../components/Forms/FormTextArea";
+import { sizes } from "../../components/Constant/global";
 
 const AddCompany = () => {
   const [addCompany] = useAddCompanyMutation();

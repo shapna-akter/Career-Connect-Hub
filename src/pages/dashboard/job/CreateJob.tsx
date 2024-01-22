@@ -9,10 +9,8 @@ import FormSelectField from "../../../components/Forms/FormSelectField";
 import FormTextArea from "../../../components/Forms/FormTextArea";
 import BreadCrumb from "../../../components/ui/dashboard/common/BreadCrumb";
 import { useAddJobMutation } from "../../../redux/api/jobApi";
-import {
-  experienceLevelOptions,
-  jobTypeOptions,
-} from "../../../components/constant/global";
+import { experienceLevelOptions, jobTypeOptions } from "../../../components/Constant/global";
+
 
 const CreateJob = () => {
   const [addJob] = useAddJobMutation();

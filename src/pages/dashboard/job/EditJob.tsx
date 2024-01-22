@@ -7,10 +7,10 @@ import BreadCrumb from "../../../components/ui/dashboard/common/BreadCrumb";
 import Form from "../../../components/Forms/Form";
 import FormInput from "../../../components/Forms/FormInput";
 import FormSelectField from "../../../components/Forms/FormSelectField";
-import { experienceLevelOptions, jobTypeOptions } from "../../../components/constant/global";
 import FormTextArea from "../../../components/Forms/FormTextArea";
 import FormDatePicker from "../../../components/Forms/FormDatePicker";
 import { useParams } from "react-router-dom";
+import { experienceLevelOptions, jobTypeOptions } from "../../../components/Constant/global";
 
 const EditJob = () => {
   const { id } = useParams();

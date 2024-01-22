@@ -3,8 +3,8 @@
 import { Button, Col, Row, message } from "antd";
 import Form from "../../../components/Form/Form";
 import FormSelectField from "../../../components/Forms/FormSelectField";
-import { companyStatus } from "../../../components/constant/global";
 import { useParams } from "react-router-dom";
+import { companyStatus } from "../../../components/Constant/global";
 
 
 const UpdateCompany = () => {
