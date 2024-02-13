@@ -216,7 +216,7 @@ const NavBar = () => {
         onClose={() => setOpenMenu(false)}
         closable={false}
         style={{
-          backgroundColor: "#2F2EA6",
+          backgroundColor: "rgba(47, 46, 166, 0.9)",
           padding: "1rem",
           textAlign: "center",
         }}
