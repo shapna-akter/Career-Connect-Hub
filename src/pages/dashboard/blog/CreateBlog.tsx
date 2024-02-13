@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// "use client";
 
 // import Form from "@/components/Forms/Form";
 // import FormInput from "@/components/Forms/FormInput";

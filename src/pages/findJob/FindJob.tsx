@@ -4,7 +4,7 @@
 import { useJobsQuery } from "../../redux/api/jobApi";
 import { Button, Card, Checkbox, Col, Divider, Flex, Input, Row } from "antd";
 import { IJobData } from "../../types";
-import { RiseOutlined } from "@ant-design/icons";
+import { RiseOutlined, SearchOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -65,7 +65,7 @@ const FindJob = () => {
           >
             Search Criteria
           </h3>
-          <Flex>
+          {/* <Flex>
             <Input
               placeholder="Search for jobs"
               size="large"
@@ -75,10 +75,17 @@ const FindJob = () => {
             <Button type="primary" onClick={handleSearch} size="large">
               Search
             </Button>
-          </Flex>
-
+          </Flex> */}
+          <Input.Search
+            placeholder="Search for jobs"
+            size="large"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onSearch={handleSearch}
+            enterButton={<SearchOutlined />}
+            style={{ width: "100%" }}
+          />
           <Divider plain>Or</Divider>
-
           <div>
             <h3
               style={{

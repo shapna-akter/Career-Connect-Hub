@@ -37,6 +37,7 @@ const LoginPage = () => {
         message.success("User logged in successfully!");
         //@ts-ignore
         if (res?.data?.data?.role === "admin") {
+          console.log(res);
           navigate("/dashboard/company-chart");
         } //@ts-ignore
         else if (res?.data?.data?.role === "recruiter") {
@@ -168,7 +169,7 @@ const LoginPage = () => {
         }}
       >
         <h2>All User Login Info.</h2>
-        <Flex justify="center" gap="20px">
+        <Flex wrap="wrap" justify="center" gap="20px">
           <div style={{ marginTop: "1rem" }}>
             <p
               style={{

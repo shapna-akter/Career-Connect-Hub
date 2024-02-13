@@ -2,6 +2,8 @@
 import logo from "../../assets/logo-blue1.png";
 
 import {
+  CloseOutlined,
+  LogoutOutlined,
   MenuOutlined,
   QuestionCircleOutlined,
   UserOutlined,
@@ -23,7 +25,6 @@ import { getUserInfo, removeUserInfo } from "../../services/auth.service";
 
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-
   const navigate = useNavigate();
   const { role, accessToken } = getUserInfo() as any;
   console.log(accessToken);
@@ -188,30 +189,80 @@ const NavBar = () => {
           )}
         </div>
         {role === "applicant" && (
-          <Space size={16} wrap>
-            <Dropdown menu={{ items }}>
-              <Space wrap size={16}>
-                <Avatar
-                  style={{ backgroundColor: "#87d068" }}
-                  icon={<UserOutlined />}
-                />
-              </Space>
-            </Dropdown>
-          </Space>
+          <>
+            <Divider
+              type="vertical"
+              style={{
+                backgroundColor: "#949494",
+                height: "2rem",
+                margin: "0 1.5rem",
+              }}
+            />
+            <Space size={16} wrap>
+              <Dropdown menu={{ items }}>
+                <Space wrap size={16}>
+                  <Avatar
+                    style={{ backgroundColor: "#87d068" }}
+                    icon={<UserOutlined />}
+                  />
+                </Space>
+              </Dropdown>
+            </Space>
+          </>
         )}
       </div>
-
       <Drawer
-        // placement="left"
         open={openMenu}
-        onClose={() => {
-          setOpenMenu(false);
-        }}
+        onClose={() => setOpenMenu(false)}
         closable={false}
-        style={{ backgroundColor: "#2F2EA6" }}
+        style={{
+          backgroundColor: "#2F2EA6",
+          padding: "1rem",
+          textAlign: "center",
+        }}
       >
+        <Button
+          type="text"
+          icon={<CloseOutlined style={{ color: "#fff", fontSize: "1.5rem" }} />}
+          onClick={() => setOpenMenu(false)}
+          style={{ position: "absolute", top: "0.5rem", right: "0.5rem" }}
+        />
+
         <NavMenu isInline />
+        <Divider style={{ margin: "1rem 0", background: "#fff" }} />
+
+        {role ? (
+          <Button
+            onClick={() => handleLogout("accessToken")}
+            size="large"
+            type="primary"
+            danger
+            icon={<LogoutOutlined />}
+            style={{
+              width: "100%",
+              marginTop: "1rem",
+            }}
+          >
+            Log out
+          </Button>
+        ) : (
+          <Link to={"/login"} style={{ cursor: "pointer" }}>
+            <Button
+              size="large"
+              type="primary"
+              style={{
+                width: "100%",
+                backgroundColor: "#2557a7",
+                border: "none",
+                marginTop: "1rem",
+              }}
+            >
+              Login
+            </Button>
+          </Link>
+        )}
       </Drawer>
+      ;
     </div>
   );
 };
